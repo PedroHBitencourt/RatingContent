@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="before-rate" id="show">
+      <div class="star-div"><img src="images/icon-star.svg" class="star"></div>
+      <h2>How did we do?</h2>  
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+      
+      <div class="rate-button">
+        <button class="btn-number" onclick="rate_number(1)">1</button>
+        <button class="btn-number" onclick="rate_number(2)">2</button>
+        <button class="btn-number" onclick="rate_number(3)">3</button>
+        <button class="btn-number" onclick="rate_number(4)">4</button>
+        <button class="btn-number" onclick="rate_number(5)">5</button>
+      </div>
+      
+      <button class="submit-btn" onclick="submit_rate()">Submit</button>
+    </div>
+    
+    <div class="after-rate" id="hidden">
+      <img src="images/illustration-thank-you.svg">
+      <div class="user-rate">You selected <span id="rate"></span> out of 5</div>
+      
+      <h2>Thank you!</h2>
+      
+      <p class="text">We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+      
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
