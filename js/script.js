@@ -14,19 +14,7 @@ function submit_rate(){
     console.log(number_rate);
     if(number_rate === 0){
         window.alert("You need to choose a rate.");
-    }else if(number_rate === 1){
-        showing_rate();
-        return number_rate;
-    }else if(number_rate === 2){
-        showing_rate();
-        return number_rate;
-    }else if(number_rate === 3){
-        showing_rate();
-        return number_rate;
-    }else if(number_rate === 4){
-        showing_rate();
-        return number_rate;
-    }else if(number_rate === 5){
+    }else{
         showing_rate();
         return number_rate;
     }
